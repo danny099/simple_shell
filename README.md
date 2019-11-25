@@ -1,6 +1,6 @@
 ![](https://trinityventures.com/uploads/images/portfolio/_270xAUTO_crop_center-center/Holberton-3.png)
 
-## Simple shell 💻
+## simple shell 💻
 
 _This is a project to create a simple shell, by the students of Holberto School._
 
@@ -78,8 +78,8 @@ Betty Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
 
 _creators of the simple-shell project_
 
-* **Danny Martinez** - *Initial Work* - [@dalmariv01](https://github.com/danny099)
-* **Aura Marina Pasmin** - *Initial Work and Documentation* - [@MaryPasmin](https://github.com/auraPasmin)
+* **Danny Martinez** - *Initial Work* - - *Twitter*-[@dalmariv01](https://twitter.com/dalmariv01) -*github*- [danny009](https://github.com/danny099)
+* **Aura Marina Pasmin** - *Initial Work and Documentation* - -*Twitter*- [@MariPasmin](https://twitter.com/Mari_Pasmin) - *github* - [auraPasmin](https://github.com/auraPasmin)
  
 
 
