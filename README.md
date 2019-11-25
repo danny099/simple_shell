@@ -1,6 +1,6 @@
 ![](https://trinityventures.com/uploads/images/portfolio/_270xAUTO_crop_center-center/Holberton-3.png)
 
-#Simple shell 💻
+##Simple shell 💻
 
 _This is a project to create a simple shell, by the students of Holberto School._
 
