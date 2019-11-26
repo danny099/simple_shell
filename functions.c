@@ -25,12 +25,12 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
-  * pEnv - print the enviroment
-  *
-  *@env: is a character
-  * Return: On succes 1.
-  * On error.
-  */
+ * pEnv - print the enviroment
+ *
+ *@env: is a character
+ * Return: On succes 1.
+ * On error.
+ */
 
 void pEnv(char **env)
 {
@@ -41,4 +41,40 @@ void pEnv(char **env)
 		printf("%s\n", env[i]);
 		i++;
 	}
+}
+
+/**
+  * execute - execute
+  *
+  *@toc: is a pointer
+  *@av: is a double pointer
+  *@env: is a double pointer
+  * Return: On succes none.
+  * On error.
+  */
+
+void execute(char *av[], char **env)
+{
+	char pat;
+
+	pat = _path(av[0], env);
+	execve(pat, (av + 1), env);
+}
+
+/**
+ * _path - path
+ *
+ *@env : is a double pointer
+ * Return: On succes none.
+ * On error.
+ */
+
+char _path(char *av, char **env)
+{
+	struct stat status;
+
+	(void)env;
+	if (stat(av, &status) == 0)
+		return (av);
+	return (av);
 }

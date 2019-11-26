@@ -12,6 +12,8 @@
 #include <string.h>
 #include <errno.h>
 
+void execute(char *av[], char **env);
+char _path(char *av, char **env);
 void pEnv(char **env);
 int _strcmp(char *s1, char *s2);
 #endif
