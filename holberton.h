@@ -12,4 +12,6 @@
 #include <string.h>
 #include <errno.h>
 
+void pEnv(char **env);
+int _strcmp(char *s1, char *s2);
 #endif
