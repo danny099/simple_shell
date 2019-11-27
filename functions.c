@@ -86,7 +86,6 @@ char *_path(char av[], char *env[])
 		free(dir);
 		token = strtok(NULL, ":");
 	}
-	free(dir);;
 	free(cpy);
 	return (av);
 }
