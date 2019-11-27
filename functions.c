@@ -39,7 +39,6 @@ void execute(char *av[], char *env[])
 	int i = 0;
 
 	pat = _path(av[0], env);
-	printf("%s", pat);
 	i = execve(pat, (av + 0), env);
 	if (i == -1)
 	{

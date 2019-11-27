@@ -25,17 +25,16 @@ int main(int ac, char *av[], char *env[])
 			return (127);
 		}
 		if (read > 1)
-		{
+		{	
 			token = strtok(string, " \t\n\r");
 			for (i = 0; i < 32 && token != NULL; i++)
 			{
 				toc[i] = token;
 				token = strtok(NULL, " \t\n\r");
 			}
-			toc[i] = NULL;
-			if (_strcmp(toc[0], "env") == 0)
 			if (_strcmp(toc[0], "exit") == 0)
-				break;
+				exit(0);
+			toc[i] = NULL;
 			son = fork();
 			if (son == 0)
 			{
