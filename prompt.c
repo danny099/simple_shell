@@ -33,7 +33,10 @@ int main(int ac, char *av[], char *env[])
 				token = strtok(NULL, " \t\n\r");
 			}
 			if (_strcmp(toc[0], "exit") == 0)
+			{
+				free(string);
 				exit(0);
+			}
 			toc[i] = NULL;
 			son = fork();
 			if (son == 0)
