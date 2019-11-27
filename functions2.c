@@ -34,10 +34,10 @@ char *_strcat(char *dest, char *src)
  * @s1: is a char
  * @s2: is a char
  * @n: is a size_t
- * Return: On succes 
+ * Return: On succes
  * On error.
  */
-int _strncmp(char *s1,char *s2, size_t n)
+int _strncmp(char *s1, char *s2, size_t n)
 {
 	while ((*s1 == *s2))
 	{

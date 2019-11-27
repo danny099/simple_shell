@@ -25,7 +25,7 @@ int main(int ac, char *av[], char *env[])
 			return (127);
 		}
 		if (read > 1)
-		{	
+		{
 			token = strtok(string, " \t\n\r");
 			for (i = 0; i < 32 && token != NULL; i++)
 			{
