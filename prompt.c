@@ -48,5 +48,6 @@ int main(int ac, char *av[], char *env[])
 		}
 	}
 	write(1, "\n", 1);
+	free(string);
 	return (0);
 }

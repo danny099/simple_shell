@@ -76,7 +76,7 @@ char *_path(char av[], char *env[])
 	token = strtok(cpy, ":");
 	for (j = 0; token != NULL; j++)
 	{
-		dir = malloc((_strlen(token) + _strlen(av) + 5) * sizeof(char));
+		dir = malloc((_strlen(token) + _strlen(av) + 10) * sizeof(char));
 		_strcat(dir, token);
 		if (dir[j - 1] != '/')
 			_strcat(dir, "/");
@@ -85,6 +85,8 @@ char *_path(char av[], char *env[])
 			return (dir);
 		token = strtok(NULL, ":");
 	}
+	free(dir);;
+	free(cpy);
 	return (av);
 }
 
