@@ -13,8 +13,7 @@ int main(int ac, char *av[], char *env[])
 	int read = 0, i = 0, status, st = 1;
 	char *string = NULL, *token, *toc[32];
 
-	(void)ac;
-	(void)av;
+	(void)ac, (void)av;
 	isatty(STDIN_FILENO) == 0 ? st = 0 : st;
 	while (1)
 	{
@@ -30,15 +29,9 @@ int main(int ac, char *av[], char *env[])
 		{
 			token = strtok(string, " \t\n\r");
 			for (i = 0; i < 32 && token != NULL; i++)
-			{
-				toc[i] = token;
-				token = strtok(NULL, " \t\n\r");
-			}
+				toc[i] = token, token = strtok(NULL, " \t\n\r");
 			if (_strcmp(string, "exit") == 0)
-			{
-				free(string);
-				exit(0);
-			}
+				free(string), exit(0);
 			toc[i] = NULL;
 			son = fork();
 			if (son < 0)
