@@ -10,18 +10,19 @@ int main(int ac, char *av[], char *env[])
 {
 	pid_t son;
 	size_t size = 0;
-	int read = 0, i = 0, status;
+	int read = 0, i = 0, status, st = 1;
 	char *string = NULL, *token, *toc[32];
 
 	(void)ac;
 	(void)av;
+	isatty(STDIN_FILENO) == 0 ? st = 0 : st;
 	while (1)
 	{
-		write(1, "$ ", 2);
+		st == 1 ? write(STDIN_FILENO, "$ ", 2) : st;
 		read = getline(&string, &size, stdin);
 		if (read == -1)
 		{
-			write(1, "\n", 1);
+			st == 1 ? write(STDIN_FILENO, "\n", 1) : st;
 			free(string);
 			return (0);
 		}
