@@ -32,17 +32,17 @@ int main(int ac, char *av[], char *env[])
 				toc[i] = token;
 				token = strtok(NULL, " \t\n\r");
 			}
-			if (_strcmp(toc[0], "exit") == 0)
+			if (_strcmp(string, "exit") == 0)
 			{
 				free(string);
-				exit(0);
+				exit(2);
 			}
 			toc[i] = NULL;
 			son = fork();
+			if (son < 0)
+				perror("Fail son"), exit(0);
 			if (son == 0)
-			{
 				execute(toc, env);
-			}
 			if (son > 0)
 				wait(&status);
 		}
