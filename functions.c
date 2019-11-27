@@ -25,14 +25,13 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
-  * execute - execute
-  *
-  *@toc: is a pointer
-  *@av: is a double pointer
-  *@env: is a double pointer
-  * Return: On succes none.
-  * On error.
-  */
+ * execute - execute
+ *
+ *@av: is a double pointer
+ *@env: is a double pointer
+ * Return: On succes none.
+ * On error.
+ */
 
 void execute(char *av[], char *env[])
 {
@@ -43,15 +42,16 @@ void execute(char *av[], char *env[])
 	pat = _path(av[0], env);
 	i = execve(pat, (av + 0), env);
 	if (i == -1)
-	  {
-	    perror("PUTO");
-	    exit;
-	  }
+	{
+		perror("PUTO");
+		exit(0);
+	}
 }
 
 /**
  * _path - path
  *
+ *@av : is a char
  *@env : is a double pointer
  * Return: On succes none.
  * On error.
@@ -59,29 +59,42 @@ void execute(char *av[], char *env[])
 
 char *_path(char av[], char *env[])
 {
-	char *cpy, *token;
-	int i = 0;
+	char *cpy, *token, *dir;
+	int i = 0, j = 0;
 	struct stat status;
 
 	if (stat(av, &status) == 0)
 		return (av);
-
-	cpy = _strdup(env);
-	token = strtok(cpy, ":");
-	while (token != NULL)
+	for (i = 0; env[i] != NULL; i++)
 	{
-
+		if (_strcmp(env[i], "PATH=") == 0)
+			break;
 	}
+	cpy = _strdup(env[i]);
+	token = strtok(cpy, ":");
+	for (j = 0; token != NULL; j++)
+	{
+		dir = malloc((_strlen(token) + _strlen(av) + 5) * sizeof(char));
+		_strcat(dir, token);
+		if (dir[j - 1] != '/')
+			_strcat(dir, "/");
+		_strcat(dir, av);
+		if (stat(dir, &status) == 0)
+			return (dir);
+		free(dir);
+		token = strtok(NULL, ":");
+	}
+	return (av);
 }
 
 
 /**
-  **_strdup - copy a strings
-  *
-  *@str: is a pointer
-  * Return: On succes string.
-  * On error.
-  */
+ **_strdup - copy a strings
+ *
+ *@str: is a pointer
+ * Return: On succes string.
+ * On error.
+ */
 
 char *_strdup(char *str)
 {
@@ -108,4 +121,20 @@ char *_strdup(char *str)
 
 }
 
+/**
+ * _strlen - return de lenght of a string
+ *
+ *@s: is a pointer
+ * Return: On succes lenght oa a string.
+ * On error.
+ */
 
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != 0; i++)
+	{
+	}
+	return (i);
+}

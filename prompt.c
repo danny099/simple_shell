@@ -13,9 +13,8 @@ int main(int ac, char *av[], char *env[])
 	int read = 0, i = 0, status;
 	char *string = NULL, *token, *toc[32];
 
-	//	if (ac > 1)
-	//  execve(av[1], (av + 2), env);
-
+	(void)ac;
+	(void)av;
 	while (1)
 	{
 		write(1, "$ ", 2);

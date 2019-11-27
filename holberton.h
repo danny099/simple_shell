@@ -12,6 +12,9 @@
 #include <string.h>
 #include <errno.h>
 
+
+char *_strcat(char *dest, char *src);
+int _strlen(char *s);
 char *_strdup(char *str);
 void execute(char *av[], char **env);
 char *_path(char av[], char *env[]);
