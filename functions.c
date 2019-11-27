@@ -83,6 +83,7 @@ char *_path(char av[], char *env[])
 		_strcat(dir, av);
 		if (stat(dir, &status) == 0)
 			return (dir);
+		free(dir);
 		token = strtok(NULL, ":");
 	}
 	free(dir);;
