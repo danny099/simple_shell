@@ -1,0 +1,74 @@
+.TH _SIMPLE_SHELL_ 1 "27 NOV 2019" "HOLBERTON 10 Cohort 1.0" "User Commands"
+
+.SH NAME
+simple_shell
+- formatted output conversion
+.SH SYNOPSIS
+.DS
+\fB#include "holberton.h"\fP
+\FB<prompt.c>\fp
+\FB<README.md>\fp
+\FB<AUTHORS>\fp
+.PP
+\fBint _printf(const char *format, ...);\fP
+.DE
+.B
+
+.SH DESCRIPTION
+based on a holberton school software school project.
+.PP
+.PP
+A Unix Shell, or also a shell, is the term used in computer science to refer to a command interpreter.
+.PP
+.B Conversion specifiers
+.PP
+.B d, i 
+.PP
+The int argument is converted to signed decimal.
+if there is, give the minimum number of digits that should appear; If the converted value requires fewer digits.
+When 0 is printed with an explicit precision 0, the output is empty.
+.PP
+.B c
+.PP
+If there is no l modifier, the int argument is converted to
+	an unsigned character and the resulting character is written.
+If it is null, it goes out.(Exit)
+	.PP
+	.B s
+	.PP
+	.B s
+	.PP
+	the const char * argument is expected to be a pointer to an array of character types (char);
+	.PP
+	.B (pointer to a string).
+	.PP
+	The characters in the array are written up to and without taking a null byte ('\ 0'). The array must contain a byte ending null ('\ 0').
+	.PP
+
+	.B FORMAT
+
+	\\" double quote
+
+	\\\\ backsslash
+
+	\\n new line
+
+	%% a single %
+
+	.SH FILES
+	.Bl 
+	AUTHORS
+	README.md
+	holberton.h
+	prompt.c
+	functions.c
+	.El
+	.SH EXAMPLE
+	.SH SEE ALSO
+
+	.SH BUGS
+	We do not know any bug in this function if you find one please contacted.
+
+	.SH AUTHOR
+	Written by Danny Martinez[https://github.com/danny099][], Aura Pasmin[https://github.com/auraPasmin][]
+	.PP
