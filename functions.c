@@ -36,13 +36,14 @@ int _strcmp(char *s1, char *s2)
 void execute(char *av[], char *env[])
 {
 	char *pat;
-	int i = 0;
+	int error = 0;
 
 	pat = _path(av[0], env);
-	i = execve(pat, (av + 0), env);
-	if (i == -1)
+	error = execve(pat, (av + 0), env);
+	if (error == -1)
 	{
-		perror("PUTO");
+		perror("error");
+		free(pat);
 		exit(0);
 	}
 }
@@ -82,7 +83,6 @@ char *_path(char av[], char *env[])
 		_strcat(dir, av);
 		if (stat(dir, &status) == 0)
 			return (dir);
-		free(dir);
 		token = strtok(NULL, ":");
 	}
 	return (av);

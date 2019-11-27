@@ -35,7 +35,7 @@ int main(int ac, char *av[], char *env[])
 			if (_strcmp(string, "exit") == 0)
 			{
 				free(string);
-				exit(2);
+				exit(0);
 			}
 			toc[i] = NULL;
 			son = fork();
