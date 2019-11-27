@@ -22,7 +22,7 @@ int main(int ac, char *av[], char *env[])
 		if (read == -1)
 		{
 			write(1, "\n", 1);
-			return (127);
+			return (0);
 		}
 		if (read > 1)
 		{
