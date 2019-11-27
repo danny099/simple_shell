@@ -38,7 +38,6 @@ void execute(char *av[], char *env[])
 	char *pat;
 	int i = 0;
 
-	printf("%s", av[0]);
 	pat = _path(av[0], env);
 	i = execve(pat, (av + 0), env);
 	if (i == -1)
@@ -67,8 +66,10 @@ char *_path(char av[], char *env[])
 		return (av);
 	for (i = 0; env[i] != NULL; i++)
 	{
-		if (_strcmp(env[i], "PATH=") == 0)
+		if (_strncmp(env[i], "PATH=", 5) == 0)
+		{
 			break;
+		}
 	}
 	cpy = _strdup(env[i]);
 	token = strtok(cpy, ":");

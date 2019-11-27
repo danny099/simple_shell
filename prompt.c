@@ -32,10 +32,9 @@ int main(int ac, char *av[], char *env[])
 				toc[i] = token;
 				token = strtok(NULL, " \t\n\r");
 			}
-			toc[i] = NULL;
-			if (_strcmp(toc[0], "env") == 0)
 			if (_strcmp(toc[0], "exit") == 0)
-				break;
+				exit(0);
+			toc[i] = NULL;
 			son = fork();
 			if (son == 0)
 			{
