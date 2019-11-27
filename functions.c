@@ -25,25 +25,6 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * pEnv - print the enviroment
- *
- *@env: is a character
- * Return: On succes 1.
- * On error.
- */
-
-void pEnv(char **env)
-{
-	int i = 0;
-
-	while (env[i])
-	{
-		printf("%s\n", env[i]);
-		i++;
-	}
-}
-
-/**
   * execute - execute
   *
   *@toc: is a pointer
@@ -53,12 +34,19 @@ void pEnv(char **env)
   * On error.
   */
 
-void execute(char *av[], char **env)
+void execute(char *av[], char *env[])
 {
-	char pat;
+	char *pat;
+	int i = 0;
 
+	printf("%s", av[0]);
 	pat = _path(av[0], env);
-	execve(pat, (av + 1), env);
+	i = execve(pat, (av + 0), env);
+	if (i == -1)
+	  {
+	    perror("PUTO");
+	    exit;
+	  }
 }
 
 /**
@@ -69,12 +57,55 @@ void execute(char *av[], char **env)
  * On error.
  */
 
-char _path(char *av, char **env)
+char *_path(char av[], char *env[])
 {
+	char *cpy, *token;
+	int i = 0;
 	struct stat status;
 
-	(void)env;
 	if (stat(av, &status) == 0)
 		return (av);
-	return (av);
+
+	cpy = _strdup(env);
+	token = strtok(cpy, ":");
+	while (token != NULL)
+	{
+
+	}
 }
+
+
+/**
+  **_strdup - copy a strings
+  *
+  *@str: is a pointer
+  * Return: On succes string.
+  * On error.
+  */
+
+char *_strdup(char *str)
+{
+	unsigned int i, j;
+	char *m;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; str[i]; i++)
+		;
+	i++;
+	m = malloc(i * sizeof(char));
+	if (m == NULL)
+	{
+		return (NULL);
+	}
+	for (j = 0; j < i; j++)
+	{
+		m[j] = str[j];
+	}
+	return (m);
+
+}
+
+

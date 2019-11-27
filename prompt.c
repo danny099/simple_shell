@@ -13,8 +13,8 @@ int main(int ac, char *av[], char *env[])
 	int read = 0, i = 0, status;
 	char *string = NULL, *token, *toc[32];
 
-	if (ac > 1)
-		execute((av + 1), env);
+	//	if (ac > 1)
+	//  execve(av[1], (av + 2), env);
 
 	while (1)
 	{
@@ -35,7 +35,6 @@ int main(int ac, char *av[], char *env[])
 			}
 			toc[i] = NULL;
 			if (_strcmp(toc[0], "env") == 0)
-				pEnv(env);
 			if (_strcmp(toc[0], "exit") == 0)
 				break;
 			son = fork();
