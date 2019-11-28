@@ -96,8 +96,10 @@ _this file has the description of the funcions  _str‐, cat, _strncmp._
 
 ## Deployment 📦
 were used to create the project
+
 [HOLBERTON SCHOOL](https://intranet.hbtn.io/concepts/75) -the framework
 ribution 🖇️
+
 [HOLBERTON SCHOOL](https://intranet.hbtn.io/projects/235)proyect  Wiki  y Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
 
 ## Authors ✒️
