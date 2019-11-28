@@ -10,6 +10,7 @@ simple_shell
 \FB<README.md>\fp
 \FB<AUTHORS>\fp
 \FB<funtions.c>\fp
+\FB<funtions2.c>\fp
 .PP
 \int _strncmp(char *s1, char *s2, size_t n);
 .PP
