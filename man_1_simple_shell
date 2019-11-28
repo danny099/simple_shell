@@ -93,7 +93,7 @@ not path:
 $/bin/ls
 whit path:
 $ls
-
+'keep in mind that you must first be inside ./hsh'
 .SH SEE ALSO
 (HOLBERTON SCHOOL PAGE)[https://www.holbertonschool.com/co]
 .SH BUGS
