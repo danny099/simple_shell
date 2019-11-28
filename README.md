@@ -14,9 +14,9 @@ _These instructions allow you to obtain a copy of the project from
 _To install to use this repository you must first have an environment to use it._
 
 ```
-example
+EXAMPLE: linux terminal
 ```
-Terminal
+
 
 ### Installation 🔧
 
@@ -36,7 +36,7 @@ $ cd
 
 ## Funtions 🔩
 ```
-_ int _strncmp(char *s1, char *s2, size_t n);
+       int _strncmp(char *s1, char *s2, size_t n);
 
        char *_strcat(char *dest, char *src);
 
@@ -48,7 +48,7 @@ _ int _strncmp(char *s1, char *s2, size_t n);
 
        char *_path(char av[], char *env[]);
 
-       int _strcmp(char *s1, char *s2); _
+       int _strcmp(char *s1, char *s2);
 ```
 ## They run the tests⚙️
 
@@ -59,20 +59,11 @@ $gcc -wall -werror -wextra -pedantic *c -o hsh
 
 $./hsh
 ```
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
 ### coding style tests ⌨️
 ```
 _$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./hsh
 $ echo "/bin/ls" | ./hsh_
 ```
-
 ## Files
 
 **_holberton.h_**
