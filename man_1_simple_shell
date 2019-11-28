@@ -89,6 +89,8 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c -o ./shell
 .br
 $ echo "/bin/ls" | ./shell
 .PP
+not path:
+$/bin/ls
 .SH SEE ALSO
 (HOLBERTON SCHOOL PAGE)[https://www.holbertonschool.com/co]
 .SH BUGS
