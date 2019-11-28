@@ -91,6 +91,9 @@ $ echo "/bin/ls" | ./shell
 .PP
 not path:
 $/bin/ls
+whit path:
+$ls
+
 .SH SEE ALSO
 (HOLBERTON SCHOOL PAGE)[https://www.holbertonschool.com/co]
 .SH BUGS
