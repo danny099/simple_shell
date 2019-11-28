@@ -75,31 +75,31 @@ $ echo "/bin/ls" | ./hsh_
 
 ## Files
 
-_holberton.h_
-This is the the file that contains  all  the  librarys  of  the  proyect.
-This the the file that contains the authors of the proyect.
-_prompt.c_      
-This is the file that contains the shell main
-_man_1_simple_shell_
-This file has the description of the the shell and how it works.
-_README.md_ 
-This file has the description of the funcions for the git.
-_Functions.c_ 
-This  file has the functions that we implement, _strcmp, execute, _path,
-_strdup, _strlen
-_Functions2.c_
-this file has the description of the funcions  _str‐, cat, _strncmp.
+**_holberton.h_**
+_This is the the file that contains  all  the  librarys  of  the  proyect.
+This the the file that contains the authors of the proyect._
+**_prompt.c_**      
+_This is the file that contains the shell main_
+**_man_1_simple_shell_**
+_This file has the description of the the shell and how it works._
+**_README.md_**
+_This file has the description of the funcions for the git._
+**_Functions.c_** 
+_This  file has the functions that we implement, _strcmp, execute, _path,
+_strdup, _strlen_
+**_Functions2.c_**
+_this file has the description of the funcions  _str‐, cat, _strncmp._
 
 
 ## Deployment 📦
 were used to create the project
-ERTON SCHOOL](https://intranet.hbtn.io/concepts/75) -the framework
+[HOLBERTON SCHOOL](https://intranet.hbtn.io/concepts/75) -the framework
 ribution 🖇️
-TON SCHOOL ](https://intranet.hbtn.io/projects/235)proyect  Wiki  y Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
+[HOLBERTON SCHOOL](https://intranet.hbtn.io/projects/235)proyect  Wiki  y Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
 
 ## Authors ✒️
 
-_crehe simple-shell project_
+_creaters simple-shell project_
 
 * **Danny Martinez** - *Initial Work* - - *Twitter*-[@dalmariv01](https://twitter.com/dalmariv01) -*github*- [danny009](https://github.com/danny099)
 * **Aura Marina Pasmin** - *Initial Work and Documentation* - -*Twitter*- [@MariPasmin](https://twitter.com/Mari_Pasmin) - *github* - [auraPasmin](https://github.com/auraPasmin)
