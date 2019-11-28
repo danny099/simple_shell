@@ -47,23 +47,41 @@ If it is null, it goes out.(Exit)
 
 	.B FORMAT
 
-	\\" double quote
-
-	\\\\ backsslash
-
-	\\n new line
-
-	%% a single %
+	ls  -
+	clear
+	exit
+	path
 
 	.SH FILES
+	.It holberton.h
+	This is the the file that contains all the librarys of the proyect.
+	.It AUTHORS
+	This the the file that contains the authors of the proyect.
+	.It prompt.c
+	This is the file that contains the shell main
+	.It man_1_simple_shell
+	This file has the description of the the shell and how it works.
+	.It README.md
+	This file has the description of the funcions for the git.
+	.It Functions.c
+	This file has the functions that we implement, _strcmp, execute, _path, _strdup, _strlen
+	.It Functions2.c
+	this file has the description of the funcions _strcat, _strncmp,
+
 	.Bl 
-	AUTHORS
-	README.md
-	holberton.h
-	prompt.c
-	functions.c
 	.El
 	.SH EXAMPLE
+	.Nm
+	Is a command line interpreter 
+	.Ar E.x: \" Inserts a space
+	.br
+
+	.Nm non-interactive mode:
+	.br
+	$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./shell
+	.br
+	$ echo "/bin/ls" | ./shell
+	.br
 	.SH SEE ALSO
 
 	.SH BUGS
