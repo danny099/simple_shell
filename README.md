@@ -115,6 +115,7 @@ _creaters simple-shell project_
 
 * Danny invited you a beer🍺
 *  We want to thank Holberton School for giving us the great opportunity to work on this, to impart knowledge.🐙.
+* thanks to this oportunite
 
 
 
