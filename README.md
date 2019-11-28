@@ -9,6 +9,10 @@ _This is a project to create a simple shell, by the students of Holberton School
 _These instructions allow you to obtain a copy of the project from
 "simple-shell" to work on your local machine for development and testing purposes._
 
+## What the shell does
+
+the shell execute the diferents commands in the PATH
+
 ### Pre-requisites 📋
 
 _To install to use this repository you must first have an environment to use it._
