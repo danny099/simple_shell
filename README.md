@@ -34,12 +34,31 @@ _To use the repository you must first enter it with the command_
 $ cd
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+## Funtions 🔩
+```
+_ int _strncmp(char *s1, char *s2, size_t n);
 
-## Ejecutando las pruebas ⚙️
+       char *_strcat(char *dest, char *src);
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+       int _strlen(char *s);
 
+       char *_strdup(char *str);
+
+       void execute(char *av[], char **env);
+
+       char *_path(char av[], char *env[]);
+
+       int _strcmp(char *s1, char *s2); _
+```
+## They run the tests⚙️
+
+_how to run automated tests for this system_
+
+```
+$gcc -wall -werror -wextra -pedantic *c -o hsh
+
+$./hsh
+```
 ### Analice las pruebas end-to-end 🔩
 
 _Explica que verifican estas pruebas y por qué_
@@ -48,35 +67,39 @@ _Explica que verifican estas pruebas y por qué_
 Da un ejemplo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
+### coding style tests ⌨️
 ```
-Da un ejemplo
+_$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./hsh
+$ echo "/bin/ls" | ./hsh_
 ```
+
+## Files
+
+_holberton.h_
+This is the the file that contains  all  the  librarys  of  the  proyect.
+This the the file that contains the authors of the proyect.
+_prompt.c_      
+This is the file that contains the shell main
+_man_1_simple_shell_
+This file has the description of the the shell and how it works.
+_README.md_ 
+This file has the description of the funcions for the git.
+_Functions.c_ 
+This  file has the functions that we implement, _strcmp, execute, _path,
+_strdup, _strlen
+_Functions2.c_
+this file has the description of the funcions  _str‐, cat, _strncmp.
+
 
 ## Deployment 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_tools that were used to create the project_
-
-* [HOLBERTON SCHOOL](https://intranet.hbtn.io/concepts/75) -the framework
-
-## Contribution 🖇️
-
-[HOLBERTON SCHOOL ](https://intranet.hbtn.io/projects/235)proyects.
-
-## Wiki 📖
-
-Betty Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
+were used to create the project
+ERTON SCHOOL](https://intranet.hbtn.io/concepts/75) -the framework
+ribution 🖇️
+TON SCHOOL ](https://intranet.hbtn.io/projects/235)proyect  Wiki  y Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
 
 ## Authors ✒️
 
-_creators of the simple-shell project_
+_crehe simple-shell project_
 
 * **Danny Martinez** - *Initial Work* - - *Twitter*-[@dalmariv01](https://twitter.com/dalmariv01) -*github*- [danny009](https://github.com/danny099)
 * **Aura Marina Pasmin** - *Initial Work and Documentation* - -*Twitter*- [@MariPasmin](https://twitter.com/Mari_Pasmin) - *github* - [auraPasmin](https://github.com/auraPasmin)
