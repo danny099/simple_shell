@@ -2,7 +2,7 @@
 
 ## Simple shell 💻
 
-_This is a project to create a simple shell, by the students of Holberto School._
+_This is a project to create a simple shell, by the students of Holberton School._
 
 ## Synopsis 🚀
 
@@ -63,6 +63,8 @@ $./hsh
 ```
 _$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./hsh
 $ echo "/bin/ls" | ./hsh_
+or interactive mode
+$ echo "ls" | ./hsh
 ```
 ## Files
 
@@ -113,7 +115,7 @@ _creaters simple-shell project_
 
 ## Expressions of Gratitude 🎁
 
-* Danny invited you a beer🍺
+* Danny I'll invite you a beer🍺
 *  We want to thank Holberton School for giving us the great opportunity to work on this, to impart knowledge.🐙.
 * thanks to this oportunite
 
