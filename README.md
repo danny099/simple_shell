@@ -76,18 +76,30 @@ $ echo "/bin/ls" | ./hsh_
 ## Files
 
 **_holberton.h_**
+
 _This is the the file that contains  all  the  librarys  of  the  proyect.
 This the the file that contains the authors of the proyect._
+
 **_prompt.c_**      
+
 _This is the file that contains the shell main_
+
 **_man_1_simple_shell_**
+
 _This file has the description of the the shell and how it works._
+
 **_README.md_**
+
 _This file has the description of the funcions for the git._
+
 **_Functions.c_** 
+
 _This  file has the functions that we implement, _strcmp, execute, _path,
+
 _strdup, _strlen_
+
 **_Functions2.c_**
+
 _this file has the description of the funcions  _str‐, cat, _strncmp._
 
 
