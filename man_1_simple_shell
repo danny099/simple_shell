@@ -10,7 +10,20 @@ simple_shell
 \FB<README.md>\fp
 \FB<AUTHORS>\fp
 .PP
-\fBint _printf(const char *format, ...);\fP
+\int _strncmp(char *s1, char *s2, size_t n);
+.PP
+char *_strcat(char *dest, char *src);
+.PP
+int _strlen(char *s);
+.PP
+char *_strdup(char *str);
+.PP
+void execute(char *av[], char **env);
+.PP
+char *_path(char av[], char *env[]);
+.PP
+int _strcmp(char *s1, char *s2);\fP
+.PP
 .DE
 .B
 
@@ -20,73 +33,69 @@ based on a holberton school software school project.
 .PP
 A Unix Shell, or also a shell, is the term used in computer science to refer to a command interpreter.
 .PP
-.B Conversion specifiers
 .PP
-.B d, i 
-.PP
-The int argument is converted to signed decimal.
-if there is, give the minimum number of digits that should appear; If the converted value requires fewer digits.
-When 0 is printed with an explicit precision 0, the output is empty.
-.PP
-.B c
-.PP
-If there is no l modifier, the int argument is converted to
-	an unsigned character and the resulting character is written.
-If it is null, it goes out.(Exit)
-	.PP
-	.B s
-	.PP
-	.B s
-	.PP
-	the const char * argument is expected to be a pointer to an array of character types (char);
-	.PP
-	.B (pointer to a string).
-	.PP
-	The characters in the array are written up to and without taking a null byte ('\ 0'). The array must contain a byte ending null ('\ 0').
-	.PP
+.SH FORMAT
+.B The "/ bin" directory
+	The / bin directory is a static directory and is where all the necessary binaries are stored to guarantee basic user-level functions. It only stores user executables, since the binaries necessary for administrative tasks managed by the root user or super-user of the system are in the / sbin directory.
+	It also includes the binaries that allow the execution of several standard utilities of the Linux terminal, specifically cat, cd, cp, echo, grep, gzip, kill, ls, mv, rm, ping, su, ps, tar and vi.
 
-	.B FORMAT
+.B ls  
+It is a command of the Unix operating system and derivatives that shows a list with the files and directories of a certain directory. The results are displayed alphabetically.
+more information "man ls"
+.B EXAMPLE
+$ ls /home/directorio
+.PP
+.B clear
+Clear (to clean), is a simple command that will clean our terminal completely leaving it as newly opened. To do this we execute.
+.B EXAMPLE
+$ clear
+.PP
+.B exit
+this a funtion what exit for the funtions
+.PP
+.SH FILES
 
-	ls  -
-	clear
-	exit
-	path
-
-	.SH FILES
-	.It holberton.h
+.B holberton.h
 	This is the the file that contains all the librarys of the proyect.
-	.It AUTHORS
 	This the the file that contains the authors of the proyect.
-	.It prompt.c
+.PP
+.B prompt.c
 	This is the file that contains the shell main
-	.It man_1_simple_shell
+.PP
+.B man_1_simple_shell
 	This file has the description of the the shell and how it works.
-	.It README.md
+.PP
+.B README.md
 	This file has the description of the funcions for the git.
-	.It Functions.c
-	This file has the functions that we implement, _strcmp, execute, _path, _strdup, _strlen
-	.It Functions2.c
-	this file has the description of the funcions _strcat, _strncmp,
+.PP
+.B Functions.c
+	This file has the functions that we implement, _strcmp, execute, _path, _strdup, _strlen.PP
+.B Functions2.c
+	this file has the description of the funcions _strcat, _strncmp.
+.PP
+.Bl 
+.El
+.SH EXAMPLE
+.Nm
+Is a command line interpreter 
+.Ar E.x: \" Inserts a space
+.br
 
-	.Bl 
-	.El
-	.SH EXAMPLE
-	.Nm
-	Is a command line interpreter 
-	.Ar E.x: \" Inserts a space
-	.br
+.Nm non-interactive mode:
+.br
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./shell
+.br
+$ echo "/bin/ls" | ./shell
+.PP
+.SH SEE ALSO
 
-	.Nm non-interactive mode:
-	.br
-	$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./shell
-	.br
-	$ echo "/bin/ls" | ./shell
-	.br
-	.SH SEE ALSO
+.SH BUGS
+We do not know any bug in this function if you find one please contacted.
 
-	.SH BUGS
-	We do not know any bug in this function if you find one please contacted.
-
-	.SH AUTHOR
-	Written by Danny Martinez[https://github.com/danny099][], Aura Pasmin[https://github.com/auraPasmin][]
-	.PP
+.SH AUTHOR
+	Written by
+.PP
+	Danny Martinez[https://github.com/danny099][]
+.PP
+	Aura Pasmin[https://github.com/auraPasmin][]
+.PP
