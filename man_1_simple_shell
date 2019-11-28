@@ -9,6 +9,7 @@ simple_shell
 \FB<prompt.c>\fp
 \FB<README.md>\fp
 \FB<AUTHORS>\fp
+\FB<funtions.c>\fp
 .PP
 \int _strncmp(char *s1, char *s2, size_t n);
 .PP
